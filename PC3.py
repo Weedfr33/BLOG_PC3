@@ -41,11 +41,11 @@ import streamlit.components.v1 as components
 # Menú vertical en una barra lateral
 # Crea una barra lateral (sidebar) en la aplicación.
 #with st.sidebar:
-    #opciones = option_menu("Selecciona una sección: ",['Inicio', 'Experiencia', 'Gráficos'] , 
+    #selected = option_menu("Selecciona una sección: ",['Inicio', 'Experiencia', 'Gráficos'] , 
        # icons=['0-circle','1-circle', '2-circle'], menu_icon="filetype-py", default_index=0)
-    # Crea un menú de opciones dentro de la barra lateral -> option_menu(...)
+    # Crea un menú de selected dentro de la barra lateral -> option_menu(...)
     # Título que se mostrará encima del menú -> "Selecciona una sección: "
-    # Lista de opciones disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
+    # Lista de selected disponibles para navegar -> ['Inicio', 'Experiencia', 'Gráficos']
     # Iconos asociados a cada opción del menú -> ['0-circle','1-circle', '2-circle']
     # Icono principal que aparece junto al título del menú -> menu_icon="filetype-py"
     # Opción seleccionada por defecto (0 = Inicio) -> default_index=0
@@ -54,20 +54,20 @@ import streamlit.components.v1 as components
 # OJO: Se puede eliminar el título del menú con None
 # Crea un menú de navegación horizontal y guarda la opción seleccionada por el usuario en la variable 'selected'
 selected = option_menu(
-    menu_title=None 
+    menu_title=None,
     options=['Inicio', 'Experiencia', 'Gráficos'], 
     icons=['flower', 'bsky', 'solid state'], 
     menu_icon=None, default_index=0, orientation="horizontal")
-    # Título que aparece antes de las opciones del menú -> menu_title="Selecciona una sección: "
-    # Lista de opciones que estarán disponibles en el menú -> ['Inicio', 'Experiencia', 'Gráficos']
+    # Título que aparece antes de las selected del menú -> menu_title="Selecciona una sección: "
+    # Lista de selected que estarán disponibles en el menú -> ['Inicio', 'Experiencia', 'Gráficos']
     # Iconos asociados a cada opción del menú -> ['person-heart', 'globe-americas', 'pencil-square']
     # Icono principal que aparece junto al título del menú -> menu_icon="cast"
     # Opción seleccionada por defecto (0 = Inicio) -> default_index=0
     # Hace que el menú se muestre horizontalmente en lugar de verticalmente -> orientation="horizontal"
 
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
-# OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "opciones"
-if opciones == 'Inicio':
+# OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "selected"
+if selected == 'Inicio':
     st.markdown("<h1 style='text-align: center;'>Nombre del blog</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
@@ -100,7 +100,7 @@ if opciones == 'Inicio':
     # f"<div style='text-align: justify; font-size: 15px;'>{texto}</div>"
     # unsafe_allow_html=True permite que Streamlit interprete las etiquetas HTML incluidas en la cadena
 
-elif opciones == 'Experiencia':
+elif selected == 'Experiencia':
     st.markdown("<h1 style='text-align: center;'>Nombre a la sección de experiencia 💻</h1>", unsafe_allow_html=True)
 
     # Agregar un  texto para la respuesta
@@ -142,7 +142,7 @@ elif opciones == 'Experiencia':
         "En este video se presenta ...., "
     )
 
-elif opciones == 'Gráficos':
+elif selected == 'Gráficos':
     st.markdown("<h2 style='text-align: center;'>Nombre a la sección 'Gráficos'</h2>", unsafe_allow_html=True)
 
     graficos = ['Gráfico_1', 'Gráfico_2', 'Mapa_1']
