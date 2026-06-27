@@ -68,7 +68,7 @@ selected = option_menu(
 # Verifica si el usuario ha seleccionado la opción "Inicio" en el menú de navegación horizontal.
 # OJO: En caso que elijas el menú de la barra lateral (sidebar) debes cambiar "selected" por "selected"
 if selected == 'Inicio':
-    st.markdown("<h1 style='text-align: center;'>Nombre del blog</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>404: Experiencia no encontrada</h1>", unsafe_allow_html=True)
     # Muestra un título principal utilizando HTML -> st.markdown("...", unsafe_allow_html=True)
     # La etiqueta <h1> define un encabezado de nivel 1 -> "<h1 ...>...</h1>"
     # El estilo CSS 'text-align: center' centra el texto -> style='text-align: center;'
@@ -85,13 +85,11 @@ if selected == 'Inicio':
 
     # Define una cadena de texto multilínea que contiene una guía para redactar una presentación personal.
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
+    Hola! Soy Ccori Arias, 
+    estudiante de comunicación audiovisual en la PUCP. 
+    Lo que más me gusta de mi carrera es que nunca se queda solo en la teoría. Es una carrera muy práctica, donde cada proyecto es una oportunidad para aprender. También disfruto mucho que combine el lado artístico con el pensamiento lógico, porque te reta a crear, analizar y resolver problemas al mismo tiempo.
+    En el futuro, me gustaría ser productora ejecutiva y de campo, me encanta crear proyectos audiovisuales y vivir todo el proceso de hacer que una idea cobre vida. 
+    Cuando tengo tiempo libre disfruto mucho ver películas, tomar fotos, grabar videos de mis experiencias cotidianas y luego editar el material.
     """
 
     # Muestra el texto en la segunda columna utilizando HTML
@@ -105,12 +103,9 @@ elif selected == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro?
-    ¿Cómo se relaciona lo que haz aprendido con tu carrera?
+    Al principio aprender a programar me daba mucho miedo porque era un curso completamente nuevo para mí. Nunca antes había programado y pensaba que sería muy difícil.
+    Sin embargo, poco a poco me di cuenta que la programación no solo es escribir códigos, sino también desarrollar paciencia, resolver problemas y pensar de una manera más organizada.
+    Lo que más disfruto de programar es ver cómo unas cuantas líneas de código pueden convertirse en 
     """
 
     # Mostramos el texto

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5865929a294a9261d2cc320e42a92869 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5865929a294a9261d2cc320e42a92869" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5865929a294a9261d2cc320e42a92869 = L.map(
+                "map_5865929a294a9261d2cc320e42a92869",
+                {
+                    center: [48.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c96f3364afd3d4c938937478c7e6ea78 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c96f3364afd3d4c938937478c7e6ea78.addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var marker_0d90ec14ce17f4182d67eca1edb7e721 = L.marker(
+                [55.9533, -3.1883],
+                {
+}
+            ).addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var icon_dc46f5847bbc375bb6c100aa4a0455ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90b8da0e81300b451860a5f29013cf96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ea6e583e81512b53803e3947daeec47 = $(`<div id="html_6ea6e583e81512b53803e3947daeec47" style="width: 100.0%; height: 100.0%;"><b>Trainspotting</b><br>Director: Danny Boyle<br>Año: 1996<br>País: Reino Unido<br>Género: Drama / Crimen<br>Tema principal: Born Slippy - Underworld<br>Lugar de grabación: Edimburgo, Escocia<br></div>`)[0];
+                popup_90b8da0e81300b451860a5f29013cf96.setContent(html_6ea6e583e81512b53803e3947daeec47);
+            
+        
+
+        marker_0d90ec14ce17f4182d67eca1edb7e721.bindPopup(popup_90b8da0e81300b451860a5f29013cf96)
+        ;
+
+        
+    
+    
+            marker_0d90ec14ce17f4182d67eca1edb7e721.bindTooltip(
+                `<div>
+                     Trainspotting
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d90ec14ce17f4182d67eca1edb7e721.setIcon(icon_dc46f5847bbc375bb6c100aa4a0455ec);
+            
+    
+            var marker_75f3f71fe0569d81c355c5e8a18aa7fc = L.marker(
+                [35.6762, 139.6503],
+                {
+}
+            ).addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var icon_e85e89d2a1700e29c9938ee85da3a4cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3c87f4ab7275e03b60661bbbd41dab2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb2f585c11a34ad8a18b21bfac9f6fec = $(`<div id="html_bb2f585c11a34ad8a18b21bfac9f6fec" style="width: 100.0%; height: 100.0%;"><b>Enter the Void</b><br>Director: Gaspar Noé<br>Año: 2009<br>País: Francia<br>Género: Drama experimental<br>Tema principal: Freak - LFO<br>Lugar de grabación: Tokio, Japón<br></div>`)[0];
+                popup_a3c87f4ab7275e03b60661bbbd41dab2.setContent(html_bb2f585c11a34ad8a18b21bfac9f6fec);
+            
+        
+
+        marker_75f3f71fe0569d81c355c5e8a18aa7fc.bindPopup(popup_a3c87f4ab7275e03b60661bbbd41dab2)
+        ;
+
+        
+    
+    
+            marker_75f3f71fe0569d81c355c5e8a18aa7fc.bindTooltip(
+                `<div>
+                     Enter the Void
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75f3f71fe0569d81c355c5e8a18aa7fc.setIcon(icon_e85e89d2a1700e29c9938ee85da3a4cf);
+            
+    
+            var marker_e60eb446f4bf739ee14d98e585fd5a69 = L.marker(
+                [36.5704, 29.1405],
+                {
+}
+            ).addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var icon_08f64c69f9c1e7f48e0ec2e18afe52f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ecb79adeafac1e339ee20a41339be82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2457ecbbc3f9bdc41c2ba3ad729a3f0c = $(`<div id="html_2457ecbbc3f9bdc41c2ba3ad729a3f0c" style="width: 100.0%; height: 100.0%;"><b>Aftersun</b><br>Director: Charlotte Wells<br>Año: 2022<br>País: Reino Unido / Estados Unidos<br>Género: Drama<br>Tema principal: Under Pressure - Queen & David Bowie<br>Lugar de grabación: Ölüdeniz, Turquía<br></div>`)[0];
+                popup_0ecb79adeafac1e339ee20a41339be82.setContent(html_2457ecbbc3f9bdc41c2ba3ad729a3f0c);
+            
+        
+
+        marker_e60eb446f4bf739ee14d98e585fd5a69.bindPopup(popup_0ecb79adeafac1e339ee20a41339be82)
+        ;
+
+        
+    
+    
+            marker_e60eb446f4bf739ee14d98e585fd5a69.bindTooltip(
+                `<div>
+                     Aftersun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e60eb446f4bf739ee14d98e585fd5a69.setIcon(icon_08f64c69f9c1e7f48e0ec2e18afe52f3);
+            
+    
+            var marker_442c5b3231ee113ccf4122f6d92f55de = L.marker(
+                [59.9139, 10.7522],
+                {
+}
+            ).addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var icon_a5e5a529de177db015219c7ec438a554 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1585e91dda3fe99267b2c3e4d9c9c156 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34d3a1ad0afe76cb6f434e21ae89370e = $(`<div id="html_34d3a1ad0afe76cb6f434e21ae89370e" style="width: 100.0%; height: 100.0%;"><b>La peor persona del mundo</b><br>Director: Joachim Trier<br>Año: 2021<br>País: Noruega<br>Género: Drama / Romance<br>Tema principal: Waters of March - Art Garfunkel<br>Lugar de grabación: Oslo, Noruega<br></div>`)[0];
+                popup_1585e91dda3fe99267b2c3e4d9c9c156.setContent(html_34d3a1ad0afe76cb6f434e21ae89370e);
+            
+        
+
+        marker_442c5b3231ee113ccf4122f6d92f55de.bindPopup(popup_1585e91dda3fe99267b2c3e4d9c9c156)
+        ;
+
+        
+    
+    
+            marker_442c5b3231ee113ccf4122f6d92f55de.bindTooltip(
+                `<div>
+                     La peor persona del mundo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_442c5b3231ee113ccf4122f6d92f55de.setIcon(icon_a5e5a529de177db015219c7ec438a554);
+            
+    
+            var marker_4d26782f8401ca8927a81c4dfe2da199 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_5865929a294a9261d2cc320e42a92869);
+        
+    
+            var icon_3ccda1a9fa204b9d6e59237f4a6c3011 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ef9661e90e98b1be1307ca7c9c385f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b87537e78d75c9bcfd10e0db744a7798 = $(`<div id="html_b87537e78d75c9bcfd10e0db744a7798" style="width: 100.0%; height: 100.0%;"><b>Titane</b><br>Director: Julia Ducournau<br>Año: 2021<br>País: Francia / Bélgica<br>Género: Terror corporal / Drama<br>Tema principal: Light House - Future Islands<br>Lugar de grabación: París, Francia<br></div>`)[0];
+                popup_2ef9661e90e98b1be1307ca7c9c385f4.setContent(html_b87537e78d75c9bcfd10e0db744a7798);
+            
+        
+
+        marker_4d26782f8401ca8927a81c4dfe2da199.bindPopup(popup_2ef9661e90e98b1be1307ca7c9c385f4)
+        ;
+
+        
+    
+    
+            marker_4d26782f8401ca8927a81c4dfe2da199.bindTooltip(
+                `<div>
+                     Titane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d26782f8401ca8927a81c4dfe2da199.setIcon(icon_3ccda1a9fa204b9d6e59237f4a6c3011);
+            
+</script>
+</html>
